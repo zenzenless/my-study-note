@@ -15,3 +15,4 @@ jobs:
         token: ${{ secrets.PERSONAL_TOKEN }}  # -> remember add this in settings/secrets as following
         source_branch: main
         source_dir: './docs'
+        publish_nojekyll: true
