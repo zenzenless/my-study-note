@@ -6,5 +6,6 @@
 
 * [区块链](blockchain-set/blockchain.md)
 * [跨链](blockchain-set/cross-chain/README.md)
-  * [Connext](blockchain-set/cross-chain/connext.md)
+  * [Connext](readme/cross-chain/connext/connext.md)
+  * [Copy of Connext](blockchain-set/cross-chain/connext-1.md)
 * [以太坊详解](blockchain-set/yi-tai-fang-xiang-jie.md)

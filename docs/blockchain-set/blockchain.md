@@ -18,4 +18,4 @@
 
 * 公证人机制
 * 哈希锁定机制
-  * [`跨链方案 Connext 原理剖析`](cross-chain/connext.md)
+  * [`跨链方案 Connext 原理剖析`](../readme/cross-chain/connext/connext.md)
