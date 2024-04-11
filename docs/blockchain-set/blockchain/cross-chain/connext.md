@@ -20,7 +20,7 @@ layout:
 
 ### 什么是connext？
 
-![connext\_\_Logo+%2B+WhiteText+MultiColor.png](<connext 374baea3a2724d87b71c4831cd58ea49/connext\_\_Logo2BWhiteTextMultiColor.png>)
+![connext\_\_Logo+%2B+WhiteText+MultiColor.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/connext\_\_Logo2BWhiteTextMultiColor.png>)
 
 Connext 是一个网络，旨在在链与 L2 之间进行快速、无需信任的通信。它的主要功能是链之间的代币交换和数据传输，而与其他互操作性系统不同的是，Connext 在不引入新的信任假设或外部验证者的情况下实现了这一点。
 
@@ -30,15 +30,15 @@ Connext 的目标是实现低成本、无信任和普遍性。它通过高资本
 
 ## 主要合约
 
-![contract.jpg](<connext 374baea3a2724d87b71c4831cd58ea49/contract.jpg>)
+![contract.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/contract.jpg>)
 
 ## 交易过程
 
-![tx.jpg](<connext 374baea3a2724d87b71c4831cd58ea49/tx.jpg>)
+![tx.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/tx.jpg>)
 
 ## 交易生命周期
 
-![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](<connext 374baea3a2724d87b71c4831cd58ea49/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png>)
+![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png>)
 
 ### **交易的三个阶段**
 
@@ -363,7 +363,7 @@ function fulfill(
 
 ## connext的架构
 
-![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](<connext 374baea3a2724d87b71c4831cd58ea49/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png>)
+![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png>)
 
 * **Contracts**：这个部分负责管理网络中的资金，根据用户和路由器提交的数据来控制资金的锁定和解锁。
 * **Subgraph**：这个功能通过缓存链上的数据和事件，让查询和响应更加高效。
