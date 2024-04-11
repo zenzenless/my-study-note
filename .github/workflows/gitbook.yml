@@ -2,7 +2,7 @@ name: 'Gitbook Action Build'
 on:
   push:
     branches:
-      - release  # trigger branch
+      - releases  # trigger branch
 jobs:
   build:
     runs-on: ubuntu-latest
