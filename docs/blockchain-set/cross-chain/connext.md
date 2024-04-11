@@ -20,7 +20,7 @@ layout:
 
 ### 什么是connext？
 
-![connext\_\_Logo+%2B+WhiteText+MultiColor.png](<connext 374baea3a2724d87b71c4831cd58ea49/connext\_\_Logo2BWhiteTextMultiColor.png>)
+![connext\_\_Logo+%2B+WhiteText+MultiColor.png](<../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/connext\_\_Logo2BWhiteTextMultiColor.png>)
 
 Connext 是一个用于在链和 L2 之间进行快速、无需信任的通信的网络
 
@@ -44,9 +44,9 @@ Connext 是一个用于在链和 L2 之间进行快速、无需信任的通信�
 
 #### 它是如何工作的？
 
-Connext的这个网络迭代采用了nxtp，这是一个轻量级的通用跨链传输协议。
+Connext的这个网络迭代采用了`nxtp`，这是一个轻量级的通用跨链传输协议。
 
-Nxtp由一个简单的合约组成，它使用锁定模式来准备和履行交易。
+`nxtp`由一个简单的合约组成，它使用锁定模式来准备和履行交易。
 
 参与的角色：
 
@@ -55,15 +55,15 @@ Nxtp由一个简单的合约组成，它使用锁定模式来准备和履行交�
 
 主要合约：
 
-![contract.jpg](<connext 374baea3a2724d87b71c4831cd58ea49/contract.jpg>)
+![contract.jpg](<../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/contract.jpg>)
 
 交易过程：
 
-![tx.jpg](<connext 374baea3a2724d87b71c4831cd58ea49/tx.jpg>)
+![tx.jpg](<../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/tx.jpg>)
 
 #### 交易生命周期
 
-![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](<connext 374baea3a2724d87b71c4831cd58ea49/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png>)
+![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](<../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png>)
 
 **交易分为三个阶段**
 
@@ -384,7 +384,7 @@ function fulfill(
 
 #### connext的架构
 
-![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](<connext 374baea3a2724d87b71c4831cd58ea49/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png>)
+![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](<../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png>)
 
 * **Contracts** ：为所有网络参与者持有资金，并根据用户和路由器提交的数据进行锁定/解锁
 * **Subgraph**：通过缓存链上数据和事件实现可扩展的查询/响应。
