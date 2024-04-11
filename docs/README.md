@@ -2,4 +2,4 @@
 
 ## [区块链](readme/blockchain.md)
 
-## [跨链](./#kua-lian)
+## [跨链](readme/cross-chain.md)
