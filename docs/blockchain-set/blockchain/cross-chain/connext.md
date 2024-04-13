@@ -30,11 +30,11 @@ Connext 的目标是实现低成本、无信任和普遍性。它通过高资本
 
 ## 主要合约
 
-![contract.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/contract.jpg>)
+![contract.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/connext_smart_contract.drawio.svg>)
 
 ## 交易过程
 
-![tx.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/tx.jpg>)
+![tx.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/transation_workflow.drawio.svg>)
 
 ## 交易生命周期
 
