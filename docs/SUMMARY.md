@@ -12,6 +12,8 @@
     * [Connext](blockchain-set/blockchain/cross-chain/connext.md)
   * [简单支付验证 SPV](blockchain-set/blockchain/spv.md)
   * [Merkel tree 默克尔树](blockchain-set/blockchain/merkel-tree-mo-ke-er-shu.md)
+  * [Filecoin](blockchain-set/blockchain/filecoin/README.md)
+    * [Gas机制及计算方法](blockchain-set/blockchain/filecoin/gas.md)
 
 ## 🛠️ 工具 <a href="#tools" id="tools"></a>
 

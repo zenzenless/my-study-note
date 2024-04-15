@@ -20,7 +20,7 @@
 
 ### 比特币的区块头如下：
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>比特币区块头</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>比特币区块头</p></figcaption></figure>
 
 从图中可以看出，比特币区块头有一个默克尔根，这个根可以用于检验交易是否被包含在区块中，只需要提供交易在默克尔树中的路径上的哈希值，便可以检验交易是否存在于区块中。关于默克尔证明可以看这里。
 
