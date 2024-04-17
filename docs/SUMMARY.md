@@ -14,6 +14,10 @@
   * [Merkel tree 默克尔树](blockchain-set/blockchain/merkel-tree-mo-ke-er-shu.md)
   * [Filecoin](blockchain-set/blockchain/filecoin/README.md)
     * [Gas机制及计算方法](blockchain-set/blockchain/filecoin/gas.md)
+* [智能合约](blockchain-set/smart-contract/README.md)
+  * [ERC20合约实战](blockchain-set/smart-contract/erc20-practice.md)
+  * [Openzeppelin 合约库的使用](blockchain-set/smart-contract/openzeppelin-he-yue-ku-de-shi-yong.md)
+  * [hardhat使用教程](blockchain-set/smart-contract/hardhat-tutorial.md)
 
 ## 🛠️ 工具 <a href="#tools" id="tools"></a>
 
