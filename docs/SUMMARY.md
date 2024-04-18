@@ -14,10 +14,14 @@
   * [Merkel tree 默克尔树](blockchain-set/blockchain/merkel-tree-mo-ke-er-shu.md)
   * [Filecoin](blockchain-set/blockchain/filecoin/README.md)
     * [Gas机制及计算方法](blockchain-set/blockchain/filecoin/gas.md)
-* [智能合约](blockchain-set/smart-contract/README.md)
-  * [ERC20合约实战](blockchain-set/smart-contract/erc20-practice.md)
-  * [Openzeppelin 合约库的使用](blockchain-set/smart-contract/openzeppelin-he-yue-ku-de-shi-yong.md)
-  * [hardhat使用教程](blockchain-set/smart-contract/hardhat-tutorial.md)
+    * [秘密选举原理解析](blockchain-set/blockchain/filecoin/expected-consensus.md)
+  * [Solana](blockchain-set/blockchain/solana/README.md)
+    * [Solana详解](blockchain-set/blockchain/solana/solana-detail.md)
+  * [智能合约](blockchain-set/blockchain/smart-contract/README.md)
+    * [ERC20合约实战](blockchain-set/blockchain/smart-contract/erc20-practice.md)
+    * [Openzeppelin 合约库的使用](blockchain-set/blockchain/smart-contract/openzeppelin-he-yue-ku-de-shi-yong.md)
+    * [hardhat使用教程](blockchain-set/blockchain/smart-contract/hardhat-tutorial.md)
+  * [Cosmos](blockchain-set/blockchain/cosmos.md)
 
 ## 🛠️ 工具 <a href="#tools" id="tools"></a>
 
