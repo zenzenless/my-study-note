@@ -1,6 +1,6 @@
 # Table of contents
 
-* [学习笔记](README.md)
+* [技术分享](README.md)
 
 ## 🔗 区块链相关 <a href="#blockchain-set" id="blockchain-set"></a>
 

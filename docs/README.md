@@ -1,3 +1,3 @@
-# 学习笔记
+# 技术分享
 
-## [区块链学习](blockchain-set/blockchain/)
+## [区块链技术分享](blockchain-set/blockchain/)
