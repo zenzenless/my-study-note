@@ -19,7 +19,7 @@ description: 默克尔证明
 
 ## 原理如下
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>默克尔树</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>默克尔树</p></figcaption></figure>
 
 1. 将底层叶子节点的数据进行哈希计算
 2. 将哈希值两两合并计算出新的哈希值
