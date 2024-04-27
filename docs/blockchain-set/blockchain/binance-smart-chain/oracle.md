@@ -6,11 +6,11 @@
 
 BSC => BC 跨链交易：
 
-![](oracle_relayer.assets/relay_workflow.drawio.svg)
+![](../../../.gitbook/assets/relay\_workflow.drawio.svg)
 
 ## 位于`Beacon Chain` 上的跨链相关模块
 
-​	位于`Beacon Chain`上的`oracle`模块，可类比成以太坊上的合约。
+​ 位于`Beacon Chain`上的`oracle`模块，可类比成以太坊上的合约。
 
 ## Oracle 模块
 
@@ -18,7 +18,7 @@ BSC => BC 跨链交易：
 
 ## Oracle 处理流程
 
-![](oracle_relayer.assets/oracle_module.drawio.svg)
+![](../../../.gitbook/assets/oracle\_module.drawio.svg)
 
 1. **Oracle模块处理**：Oracle模块负责接收验证者提交的声明消息。仅当消息中的序列号与当前期望的序列号匹配时，该消息才会被接受。不匹配的序列号将导致声明消息被立即拒绝，以维护数据的连续性和完整性。
 2. **消息有效性验证**：在序列号验证通过后，系统将进一步审查声明消息的内容。任何不符合预定标准的声明将被标记为无效，并且相关消息将被退回。
@@ -30,39 +30,30 @@ BSC => BC 跨链交易：
 
 桥接模块将处理跨链交易。它包含两部分：从 `BC` 到 `BSC` 的交易和从 `BSC` 到 `BC` 的交易。对于从 `BSC` 到 `BC` 的交易，它将取决于 oracle 模块。当验证者对某个声明达成共识时，桥接模块将根据该声明处理交易，如从 BSC 到 BC 的代币转移。对于从 BC 到 BSC 的交易，它会处理交易的 BC 部分，并为 BSC 编写相关的跨链数据包。
 
-
-
 ## 中继器
 
-​	中继器`oracle-relayer`是一个独立的二进制程序，它监听 BSC 上的事件，构建事务并将其广播到 BC。每个验证者都应该维护自己的中继器，并且中继器需要能够访问验证者的私钥。所有中继器服务独立见证`BSC`上的跨链合约事件，然后构建交易以向 BC `oracle`模块声明事件。
-
-
-
-
+​ 中继器`oracle-relayer`是一个独立的二进制程序，它监听 BSC 上的事件，构建事务并将其广播到 BC。每个验证者都应该维护自己的中继器，并且中继器需要能够访问验证者的私钥。所有中继器服务独立见证`BSC`上的跨链合约事件，然后构建交易以向 BC `oracle`模块声明事件。
 
 ### 中继过程
 
-![中继流程](oracle_relayer.assets/relay.svg)
+![中继流程](../../../.gitbook/assets/relay.svg)
 
 1. 持续监听跨链事件：
 
 中继器持续监听BSC链上`CrossChain`合约的事件，将跨链数据保存到数据库
 
-![image-20220415135104674](oracle_relayer.assets/image-20220415135104674.png)
+![image-20220415135104674](../../../.gitbook/assets/image-20220415135104674.png)
 
-![image-20220415140122871](oracle_relayer.assets/image-20220415140122871.png)
+![image-20220415140122871](../../../.gitbook/assets/image-20220415140122871.png)
 
 2. 从`BC`链上获取`sequence`等参数
-
 3. 根据`sequence`参数从数据库获取要声明的交易
+4.  将数据包放在`claim`消息里，发送给`BC`链中的`oracle`模块：
 
-4. 将数据包放在`claim`消息里，发送给`BC`链中的`oracle`模块：
+    声明的内容：
 
-   声明的内容：
-   
-   ![image-20220415143517957](oracle_relayer.assets/image-20220415143517957.png)
+    ![image-20220415143517957](../../../.gitbook/assets/image-20220415143517957.png)
 
 `claim`消息结构:
 
-![image-20220415165254684](oracle_relayer.assets/image-20220415165254684.png)
-
+![image-20220415165254684](../../../.gitbook/assets/image-20220415165254684.png)

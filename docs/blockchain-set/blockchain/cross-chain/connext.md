@@ -14,13 +14,11 @@ layout:
 
 # Connext
 
-
-
 ## connext概述
 
 ### 什么是connext？
 
-![connext\_\_Logo+%2B+WhiteText+MultiColor.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/connext\_\_Logo2BWhiteTextMultiColor.png>)
+![connext\_\_Logo+%2B+WhiteText+MultiColor.png](../../../.gitbook/assets/connext\_\_Logo2BWhiteTextMultiColor.png)
 
 Connext 是一个网络，旨在在链与 L2 之间进行快速、无需信任的通信。它的主要功能是链之间的代币交换和数据传输，而与其他互操作性系统不同的是，Connext 在不引入新的信任假设或外部验证者的情况下实现了这一点。
 
@@ -30,15 +28,15 @@ Connext 的目标是实现低成本、无信任和普遍性。它通过高资本
 
 ## 主要合约
 
-![contract.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/connext_smart_contract.drawio.svg>)
+![contract.jpg](../../../.gitbook/assets/connext\_smart\_contract.drawio.svg)
 
 ## 交易过程
 
-![tx.jpg](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/transation_workflow.drawio.svg>)
+![tx.jpg](../../../.gitbook/assets/transation\_workflow.drawio.svg)
 
 ## 交易生命周期
 
-![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png>)
+![HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png](../../../.gitbook/assets/HighLevelFlow-8fa010ecd5303fc6b12c9ecb54e5a83b.png)
 
 ### **交易的三个阶段**
 
@@ -363,7 +361,7 @@ function fulfill(
 
 ## connext的架构
 
-![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](<../../../readme/cross-chain/connext/connext 374baea3a2724d87b71c4831cd58ea49/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png>)
+![Architecture-6db700297f1357f8b5459ce1df5d2ef7.png](../../../.gitbook/assets/Architecture-6db700297f1357f8b5459ce1df5d2ef7.png)
 
 * **Contracts**：这个部分负责管理网络中的资金，根据用户和路由器提交的数据来控制资金的锁定和解锁。
 * **Subgraph**：这个功能通过缓存链上的数据和事件，让查询和响应更加高效。
@@ -393,8 +391,6 @@ HTLCs（Hash Time Locked Contracts）：HTLC是一种付款方式，它使用哈
 `connext`正在实施一个惩罚机制，惩罚没有完成所承诺的交易的`router`
 
 `nxtp`由一个简单的合约组成，它使用锁定模式来准备和履行交易。
-
-
 
 ## 总结
 
