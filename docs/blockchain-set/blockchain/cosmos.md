@@ -107,9 +107,9 @@ TODO
 
 TODO
 
-### 模块化构建区块链
+## 模块化构建区块链
 
-#### Cosmos SDK
+### Cosmos SDK
 
 Cosmos SDK 提供一套构建应用层的框架，就像是区块链界的 Ruby-on-Rails （Ruby-on-Rails 是一种让开发者轻松通过默认设置构建网页端应用的框架），Cosmos SDK 也为开发者提供了一种基于 Tendermint 内核构建安全的区块链应用的框架。
 
@@ -117,7 +117,7 @@ Cosmos SDK 提供一套构建应用层的框架，就像是区块链界的 Ruby-
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-**Cosmos 应用如何运行（抽象视角)**
+### **Cosmos 应用如何运行（抽象视角)**
 
 Cosmos SDK 提供一种「multistore」机制来定义及维护应用层状态机的状态。Multistore 将应用层的状态划分到不同组件，通过各自的「模块」进行管理。
 
@@ -151,7 +151,9 @@ ABCI 是 Socket 通信协议，连接 Tendermint 核心（共识 + 网络）与�
 
 ***
 
-#### Modules
+## Cosmos SDK的主要特征
+
+### Modules
 
 **每个Cosmos链都是一个特制的区块链**。Cosmos SDK模块定义了每个链的独特属性。模块可以被认为是更大的状态机中的状态机。它们包含存储布局或状态和状态转换函数，也就是消息方法。
 
@@ -389,7 +391,7 @@ Cosmos Gravity Bridge 旨在在 Cosmos Hub 上运行。它专注于最大限度�
 
 ***
 
-### cosmos到底是什么？
+## cosmos到底是什么？
 
 1. Cosmos 通过 Tendermint BFT 和 Cosmos SDK 的模块化使区块链功能强大且易于开发。
 2. Cosmos 使区块链能够通过 IBC 和 Peg-Zones 相互转移价值，同时让它们保留自己的主权。
