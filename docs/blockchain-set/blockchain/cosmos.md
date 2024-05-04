@@ -21,7 +21,7 @@
 
 **以太坊(区块链2.0--应用的爆发)：**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 可在链上构建去中心化应用程序
 * POW机制
@@ -36,7 +36,7 @@
 
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>单一区块链架构</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>单一区块链架构</p></figcaption></figure>
 
 这些限制并非特定于以太坊，而是所有试图创建适合所有用例的单一平台的区块链。这就是 Cosmos 发挥作用的地方。
 
@@ -52,7 +52,7 @@ Cosmos 的愿景是让开发人员能够轻松地构建区块链并通过允许�
 
 旨在让人们快速构建自定义、安全、可扩展和可互操作的区块链应用程序。
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 共识
 
@@ -84,9 +84,9 @@ Cosmos 的愿景是让开发人员能够轻松地构建区块链并通过允许�
 3. **提交阶段**： 投票通过的区块将被提交到链，使链高度增加。如果提交失败，要么返回预投票阶段，要么返回提议阶段。
 4. **进入新高度**
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 特点
 
@@ -115,7 +115,7 @@ Cosmos SDK 提供一套构建应用层的框架，就像是区块链界的 Ruby-
 
 要记住，区块链就是一个在所有节点将状态做相同备份的状态机，而 Cosmos SDK 让你可以构建能在多个节点间进行复制的实际状态机。SDK 让你自定义应用的状态、事务类型，及状态-转变函数所需的功能和工具。
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Cosmos 应用如何运行（抽象视角)**
 
@@ -129,7 +129,7 @@ Cosmos SDK 的强大之处就是它独特的模块化设计，每个模块定义
 
 每个模块都是个**小状态机**，可以相互聚合生成总体状态机。
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 应用开发者按照每个模块和修改状态的惯用逻辑来定义子集，除了 Cosmos SDK 提供的模块，开发者还能调用第三方模块。
 
@@ -139,11 +139,11 @@ Cosmos SDK 的强大之处就是它独特的模块化设计，每个模块定义
 
 发生在应用层的交易通过区块链应用交互界面（ABCI, Application Blockchain Interface）与 Tendermint 共识及网络层通信。
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ABCI 是 Socket 通信协议，连接 Tendermint 核心（共识 + 网络）与应用。它可以兼容任何编程语言，也就是说使用 Cosmos SDK 构建的区块链应用理论上能以任何语言编写，而不仅仅是 Tendermint 底层共识和网路层所用的编程语言。
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 总而言之，Cosmos SDK 允许开发者基于 Tendermint 内核构建去中心化应用，这个应用理论上能用任何语言开发，并通过 ABCI 连接 Tendermint 共识引擎。
 
