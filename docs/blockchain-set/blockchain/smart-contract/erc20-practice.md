@@ -65,4 +65,44 @@ contract ERC20Basic {
 * `balanceOf(address _who)` 查询某个地址有多少token
 * `transfer(address _to,uint256 _value)public returns (bool)` 用于token转账
 
-TODO:
+### ERC20 合约接口
+
+ERC20合约在ERC20 Basic合约上进行了部分扩容，增加了函数定义.转让Token的过程可以由“主动转账”变为“授权索取”，在便利性上而言,主动转账更为直接，但要求知道转让对象是谁；而被动索取更适用于家长-孩子关系中管理的零花钱模式，让家长能够定授权孩子动用一部分的资金，至于资金流向何方，是孩子的决定权。
+
+```solidity
+pragma solidity ^0.4.24;
+
+import "./ERC20Basic.sol";
+/**
+ * @title ERC20 interface
+ * @dev Enhanced interface with allowance functions.
+ * See https://github.com/ethereum/EIPs/issues/20
+ */
+contract ERC20 is ERC20Basic { //继承了ERC20Basic合约
+    // Check the allowed value that the _owner allows the _spender to take from his balance.
+    function allowance(address _owner, address _spender) public view returns (uint256);
+
+    // Transfer _value from the balance of holder _from to the receiver _to.
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool);
+
+    // Approve _spender to take some _value from the balance of msg.sender.
+    function approve(address _spender, uint256 _value) public returns (bool);
+
+    // Fired when an approval is made.
+    event Approval(
+        address indexed owner,
+        address indexed spender,
+        uint256 value
+    );
+}
+
+```
+
+* allowance()函数：查阅授权情况。这是个公开函数，任何人都可以查询任何其他人的授权情况，函数接受两个参数，参数第一个是授权人 \_owner，第二个是被授权人 \_spender。因为查询了区块链相关的存储区，所以用public和view来修饰该函数，函数返回值是授权token的数量，采用最宽位256bit正整数来表示。
+* approve()函数：允许授权行为，持有者允许被授权人转走一定数量的Token资产。这是个公开可调用函数，但修改了区块链状态，故仅采用public进行修饰。函数接收两个参数，第一个是 \_spender被授权人，第二个是 \_value即授权的 Token数量。这个函数有一定的问题，在被授权人花掉token的时候若授权方调整了数额，则有一定概率会发生授权过多的现象。该函数执行前提是检查msg.sender是否有足够的额度可供授权。
+* transferFrom()函数：被授权人划走一定量的Token去往他指定的地点。这个函数公开可调用，但会修改区块链状态。在划走之前一定要检查权限，是否该人被授权动用了这些额度的Token。函数共接收三个参数 \_from、\_to、 \_value。分别代表了转移支付方，转移受付方，以及转移Token的额度。
+
+该合约还定义了Approval 事件，该事件与Transfer事件一样，一旦发生相应的行为就会被触发，Approval事件记录了授权事件的授权方、被授权方和授权的数额。
+
+
+
