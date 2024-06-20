@@ -70,10 +70,11 @@ OP在链上（以太坊等）构建了一个执行环境:OVM.
 
     <figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 2. 链上（以太坊等）OP的合约就通过验证默克尔证明，与前置的状态根进行比对，正确的话就说明验证者提交的状态数据是对的。
-3. 合约中的OP虚拟机，通过加载验证者提交的状态和定序器之前提交的交易序列重放交易，得出交易批次的执行结果。如果交易批次的执行结果与定序器提交的状态根不一致。则欺诈证明成功。
-   1. 欺诈证明成功：定序器遭到惩罚，削减质押等。验证者获得奖励
+3.  合约中的OP虚拟机，通过加载验证者提交的状态和定序器之前提交的交易序列重放交易，得出交易批次的执行结果。如果交易批次的执行结果与定序器提交的状态根不一致。则欺诈证明成功。
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    1. 欺诈证明成功：定序器遭到惩罚，削减质押等。验证者获得奖励
+
+    <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 
 
